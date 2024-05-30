@@ -30,6 +30,10 @@ jobs:
         python -m pip install --upgrade pip
         pip install pytest
 
-    - name: Run tests
+    - name: Run tests for lab1
       run: |
-        pytest tests
+        pytest lab1/tests.py
+
+    - name: Run tests for lab2
+      run: |
+        pytest lab2/tests.py
